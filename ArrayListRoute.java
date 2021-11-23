@@ -16,7 +16,9 @@ public class ArrayListRoute
             String sentence="";
 
             while((sentence=br.readLine())!=null)
-            routeList.add(new Route())
+            {
+                routeList.add(new Route())
+            }
         }
     }
 }
