@@ -28,5 +28,9 @@ public class ArrayListRoute
         {
             System.out.println(ip.toString());
         }
+        catch(ParseException pe)
+        {
+            System.out.println(pe.toString());
+        }
     }
 }
