@@ -14,7 +14,7 @@ public class ArrayListRoute
         {
             BufferedReader br = new BufferedReader(new FileReader(filename));
 
-            
+            routeList.add(new Route())
         }
     }
 }
