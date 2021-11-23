@@ -79,7 +79,7 @@ public class ArrayListRoute
 
         if(sourcedestination.isPresent())
         {
-            Optional<Route> destination1 = routeInfo.stream().filter(p->(p.getDestination().equalsIgnoreCase(destination).map(f->f.getDestination()).findAny();
+            Optional<Route> destination1 = routeInfo.stream().filter(p->(p.getDestination().equalsIgnoreCase(destination).findAny();
             
             if(destination1.isPresent())
             {
