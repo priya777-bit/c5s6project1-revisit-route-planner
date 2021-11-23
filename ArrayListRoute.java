@@ -97,6 +97,10 @@ public class ArrayListRoute
                         for(Route r1:routeInfo)
                         {
                             Optional<Route> show = routeInfo.stream().filter(p->p.getDestination().equalsIgnoreCase(tempdestination)).findAny();
+                            if(show.isPresent())
+                            {
+                                
+                            }
                         }           
                     }
                 }
