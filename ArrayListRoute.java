@@ -70,7 +70,7 @@ public class ArrayListRoute
 
     public void sortDirectFlights(List<Route> directFlight)
     {
-        directFlight.stream().sorted(Comparator.comparing(Route::getDestination).reversed());
+        directFlight.stream().sorted(Comparator.comparing(Route::getDestination));
         directFlight.forEach(display);
     }
 
