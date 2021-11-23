@@ -12,7 +12,7 @@ import java.util.*;
 public class ArrayListRoute
 {
     List<Route> routeInfo = new ArrayList<Route>();
-    Optional<Route> directFlightInfo = Optional.empty();
+    Optional<String> directFlightInfo = Optional.empty();
     Optional<String> sortDirectFlightsInfo = Optional.empty();
 
     public List<Route> readFromFile(String filename)
@@ -52,11 +52,11 @@ public class ArrayListRoute
 
     public void showDirectFlights(String source)
     {
-        directFlightInfo = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).findAny();
+        directFlightInfo = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).map(f->f.getDestination()).findAny();
 
         if(directFlightInfo.isPresent())
         {
-            System.out.println(directFlightInfo.get().getSource());
+            System.out.println(directFlightInfo.get());
         }
         else
         {
