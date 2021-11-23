@@ -42,7 +42,7 @@ public class ArrayListRoute
        routeInfo.stream().forEach(d->System.out.println(d)); 
     }
 
-    public void showDirectFlights(ArrayList<Route> routeInfo,String source)
+    /*public void showDirectFlights(ArrayList<Route> routeInfo,String source)
     {
         directFlightInfo = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).findAny().collect(Collectors.toList());
 
@@ -59,6 +59,6 @@ public class ArrayListRoute
     public void sortDirectFlights(Optional<String> directFlightInfo)
     {
        // directFlightInfo = sortDirectFlightsInfo.stream().sorted()
-    }
+    }*/
 
 }
