@@ -6,5 +6,6 @@ public class App
         String filename="routes.csv";
         rl.readFromFile(filename);
         rl.displayList();
+        rl.showDirectFlights();
     }
 }
