@@ -27,7 +27,7 @@ public class ArrayListRoute
                 routeInfo.add(new Route(split[0],split[1],Integer.parseInt(split[2]),Integer.parseInt(split[3]),split[4]));
             }
         }
-        catch(IOException ip)
+        catch(Exception ip)
         {
             System.out.println(ip.toString());
         }
