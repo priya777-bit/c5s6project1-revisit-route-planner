@@ -50,7 +50,7 @@ public class Route
     {
         return time;
     }
-    public void setTime()
+    public void setTime(int time)
     {
         this.time=time;
     }
