@@ -102,9 +102,14 @@ public class ArrayListRoute
                             showAllFlights(tempdestination,destination);
                         }
                     }
+                }
 
             }
                 
+        }
+        else
+        {
+            System.out.println("No FLights ...");
         }
     }
 
