@@ -56,7 +56,7 @@ public class ArrayListRoute
 
         while(directFlightInfo.isPresent())
         {
-            if(filter(p->p.getSource().equalsIgnoreCase(source))
+            if(filter(p->p.getSource().equalsIgnoreCase(source)))
             {
                 System.out.println(directFlightInfo.get().getSource());
             }
