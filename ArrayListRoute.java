@@ -14,7 +14,7 @@ public class ArrayListRoute
     Optional<String> directFlightInfo = Optional.empty();
     Optional<String> sortDirectFlightsInfo = Optional.empty();
 
-    public List<Route> readFromFile(String filename)
+    public void readFromFile(String filename)
     {
         try
         {
@@ -35,7 +35,6 @@ public class ArrayListRoute
         {
             System.out.println(pe.toString());
         }
-        return routeInfo;
     }
 
     public void displayList()
