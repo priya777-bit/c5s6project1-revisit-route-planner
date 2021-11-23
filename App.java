@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App
 {
     public static void main(String args[])
@@ -7,6 +9,7 @@ public class App
         rl.readFromFile(filename);
         rl.displayList();
         List<Route> flightlist = new ArrayList<Route>();
-        rl.showDirectFlights(flightlist);
+        String sourceCity=
+        flightlist=rl.showDirectFlights(flightlist);
     }
 }
