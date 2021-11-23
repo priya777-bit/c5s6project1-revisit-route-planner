@@ -20,10 +20,11 @@ public class ArrayListRoute
         {
             BufferedReader br = new BufferedReader(new FileReader(filename));
             String sentence="";
+            String split[];
 
             while((sentence=br.readLine())!=null)
             {
-                String split[]=sentence.split(",");
+                split=sentence.split(",");
                 Route rp = new Route(split[0],split[1],Integer.parseInt(split[2]),Integer.parseInt(split[3]),split[4]);
                 routeInfo.add(rp);
             }
