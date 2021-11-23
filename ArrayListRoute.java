@@ -9,7 +9,7 @@ import java.lang.Exception;
 
 public class ArrayListRoute
 {
-    List<Route> routeList = new ArrayList<Route>();
+    List<Route> routeInfo = new ArrayList<Route>();
 
     public List<Route> readFromFile(String filename)
     {
@@ -21,7 +21,7 @@ public class ArrayListRoute
             while((sentence=br.readLine())!=null)
             {
                 String split[]=sentence.split(",");
-                routeList.add(new Route(split[0],split[1],Integer.parseInt(split[2]),Integer.parseInt(split[3]),split[4]));
+                routeInfo.add(new Route(split[0],split[1],Integer.parseInt(split[2]),Integer.parseInt(split[3]),split[4]));
             }
         }
         catch(IOException ip)
@@ -36,8 +36,8 @@ public class ArrayListRoute
 
     public void displayList()
     {
-       Consumer<Route> disp = routeList.stream().forEach(d->System.out.println(d)); 
+       Consumer<Route> disp = routeInfo.stream().forEach(d->System.out.println(d)); 
     }
 
-    
+
 }
