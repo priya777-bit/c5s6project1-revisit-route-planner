@@ -103,9 +103,7 @@ public class ArrayListRoute
                                 showAllFlights(source,tempdestination);
                                 showAllFlights(tempdestination,destination);
                             }
-            }           
-                
-                        }
+                        }           
                     }
                 }
             }
