@@ -48,7 +48,7 @@ public class ArrayListRoute
 
     public void displayList()
     {
-       forEach(display);
+       routesInfo.forEach(display);
     }
 
     public void showDirectFlights(String source)
