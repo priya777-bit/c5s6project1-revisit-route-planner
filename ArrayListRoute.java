@@ -43,7 +43,7 @@ public class ArrayListRoute
 
     public Optional<Route> showDirectFlights(ArrayList<Route> routeInfo,String source)
     {
-        Optional<Route> directFlightInfo = routeInfo.stream().filter()
+        Optional<Route> directFlightInfo = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).
     }
 
 }
