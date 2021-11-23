@@ -59,7 +59,7 @@ public class ArrayListRoute
 
     public void sortDirectFlights(Optional<String> directFlightInfo)
     {
-        directFlightInfo = sortDirectFlightsInfo.stream()
+        directFlightInfo = sortDirectFlightsInfo.stream().sorted()
     }
 
 }
