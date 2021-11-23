@@ -10,6 +10,7 @@ import java.lang.Exception;
 public class ArrayListRoute
 {
     List<Route> routeInfo = new ArrayList<Route>();
+    List<Route> directFlightInfo = new ArrayList<Route>();
 
     public List<Route> readFromFile(String filename)
     {
