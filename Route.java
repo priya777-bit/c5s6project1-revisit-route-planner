@@ -66,6 +66,6 @@ public class Route
     //toString
     public String toString()
     {
-        return source+"::"+destination+"::"+distance+"::"+time+"::"cost
+        return source+"::"+destination+"::"+distance+"::"+time+"::"+cost;
     }
 }
