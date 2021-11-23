@@ -10,6 +10,6 @@ public class App
         rl.readFromFile(filename);
         rl.displayList();
         String sourceCity=sc.nextLine();
-        rl.showDirectFlights(flightlist,sourceCity);
+        rl.showDirectFlights(sourceCity);
     }
 }
