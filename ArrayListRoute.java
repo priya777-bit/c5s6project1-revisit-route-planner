@@ -48,11 +48,11 @@ public class ArrayListRoute
 
         if(directFlightInfo.isPresent())
         {
-            return directFlightInfo.get();
+            System.out.println(directFlightInfo.get());
         }
         else
         {
-            return directFlightInfo.empty();
+            System.out.println(directFlightInfo.empty();
         }
     }
 
