@@ -46,4 +46,12 @@ public class Route
     {
         this.distance=distance;
     }
+    public int getTime()
+    {
+        return time;
+    }
+    public void setTime()
+    {
+        this.time=time;
+    }
 }
