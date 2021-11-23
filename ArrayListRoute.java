@@ -88,7 +88,10 @@ public class ArrayListRoute
                 showAll.forEach(display);
             }
             String tempdestination="";
-            
+            for(Route r:routeInfo)
+            {
+                
+            }
                 
         }
     }
