@@ -58,7 +58,7 @@ public class ArrayListRoute
 
         if(directFlightInfo.isPresent())
         {
-            directFlight=routeInfo.stream().filter
+            directFlight=routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
         }
         else
         {
