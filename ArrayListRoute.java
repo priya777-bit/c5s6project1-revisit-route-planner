@@ -87,23 +87,24 @@ public class ArrayListRoute
             {
                 showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
                 showAll.forEach(display);
-            }
-            for(Route r:routeInfo)
-            {
-                if(source.equalsIgnoreCase(r.getSource()))
-                {
-                    tempdestination=r.getDestination();
 
-                    for(Route r1:routeInfo)
+                for(Route r:routeInfo)
+                {
+                    if(source.equalsIgnoreCase(r.getSource()))
                     {
-                        if(tempdestination.equalsIgnoreCase(r1.getSource()) && destination.equalsIgnoreCase(r1.getDestination()))
+                        tempdestination=r.getDestination();
+
+                        for(Route r1:routeInfo)
                         {
-                            showAllFlights(source,tempdestination);
-                            showAllFlights(tempdestination,destination);
-                        }
-                    }           
+                            if(tempdestination.equalsIgnoreCase(r1.getSource()) && destination.equalsIgnoreCase(r1.getDestination()))
+                            {
+                                showAllFlights(source,tempdestination);
+                                showAllFlights(tempdestination,destination);
+                            }
+                        }           
+                    }
                 }
-            }        
+            }       
         }
         else
         {
