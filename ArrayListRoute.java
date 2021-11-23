@@ -66,7 +66,7 @@ public class ArrayListRoute
         }
     }
 
-    public void sortDirectFlights(Optional<String> directFlightInfo)
+    public void sortDirectFlights(List<Route> directFlightInfo)
     {
        // directFlightInfo = sortDirectFlightsInfo.stream().sorted()
     }
