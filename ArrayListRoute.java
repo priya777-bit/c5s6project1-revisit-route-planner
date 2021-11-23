@@ -12,6 +12,7 @@ import java.util.*;
 public class ArrayListRoute
 {
     List<Route> routeInfo = new ArrayList<Route>();
+    Consumer<Route> display = (d)->System.out.println(d);
     Optional<String> directFlightInfo = Optional.empty();
     Optional<String> sortDirectFlightsInfo = Optional.empty();
 
