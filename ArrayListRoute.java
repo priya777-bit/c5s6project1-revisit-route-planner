@@ -9,6 +9,9 @@ public class ArrayListRoute
 
     public List<Route> readFromFile(String filename)
     {
-        
+        try
+        {
+            BufferedReader br = new BufferedReader(new FileReader(filename));
+        }
     }
 }
