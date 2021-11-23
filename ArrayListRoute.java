@@ -40,7 +40,7 @@ public class ArrayListRoute
        Consumer<Route> disp = routeInfo.stream().forEach(d->System.out.println(d)); 
     }
 
-    public List<Route> showDirectFlights(ArrayList<Route> routeInfo,String source)
+    public Optional<Route> showDirectFlights(ArrayList<Route> routeInfo,String source)
     {
 
     }
