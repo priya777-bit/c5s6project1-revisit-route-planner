@@ -25,7 +25,7 @@ public class ArrayListRoute
 
             while((sentence=br.readLine())!=null)
             {
-                split=sentence.split(",");
+                split=sentence.split(",").trim();
                 Route rp = new Route(split[0],split[1],Integer.parseInt(split[2]),Integer.parseInt(split[3]),split[4]);
                 routeInfo.add(rp);
             }
