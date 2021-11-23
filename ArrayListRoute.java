@@ -52,7 +52,7 @@ public class ArrayListRoute
         }
         else
         {
-            return Optional.empty();
+            return directFlightInfo.empty();
         }
     }
 
