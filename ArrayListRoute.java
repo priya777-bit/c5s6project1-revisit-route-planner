@@ -86,7 +86,9 @@ public class ArrayListRoute
             {
                 showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
                 showAll.forEach(display);
-           
+            }
+            else
+            {
                 String tempdestination="";
                 for(Route r:routeInfo)
                 {
@@ -101,6 +103,8 @@ public class ArrayListRoute
                                 showAllFlights(source,tempdestination);
                                 showAllFlights(tempdestination,destination);
                             }
+            }           
+                
                         }
                     }
                 }
