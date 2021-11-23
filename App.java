@@ -12,5 +12,7 @@ public class App
         String sourceCity=sc.nextLine();
         System.out.println();
         rl.showDirectFlights(sourceCity);
+        System.out.println();
+        
     }
 }
