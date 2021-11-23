@@ -54,16 +54,13 @@ public class ArrayListRoute
     {
         directFlightInfo = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).findAny();
 
-        while(directFlightInfo.isPresent())
+        if(directFlightInfo.isPresent())
         {
-            if(routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)))
-            {
-                System.out.println(directFlightInfo.get().getSource());
-            }
-            else
-            {
-                System.out.println("No Flights....");
-            }
+            System.out.println(directFlightInfo.get().getSource());
+        }
+        else
+        {
+            System.out.println("No Flights....");
         }
     }
 
