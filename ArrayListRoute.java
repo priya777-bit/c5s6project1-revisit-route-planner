@@ -17,6 +17,7 @@ public class ArrayListRoute
 
             while((sentence=br.readLine())!=null)
             {
+                String split[]=sentence.split(",");
                 routeList.add(new Route())
             }
         }
