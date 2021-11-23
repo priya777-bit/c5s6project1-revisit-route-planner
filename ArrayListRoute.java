@@ -28,9 +28,9 @@ public class ArrayListRoute
                 routeInfo.add(rp);
             }
         }
-        catch(FileNotFoundException fp)
+        catch(Exception ip)
         {
-            System.out.println(fp.toString());
+            System.out.println(ip.toString());
         }
     }
 
