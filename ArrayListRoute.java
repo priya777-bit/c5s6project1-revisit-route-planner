@@ -87,12 +87,12 @@ public class ArrayListRoute
             {
                 showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
                 showAll.forEach(display);
-
-                for(Route r:routeInfo)
+            }
+            for(Route r:routeInfo)
+            {
+                if(source.equalsIgnoreCase(r.getSource()))
                 {
-                    if(source.equalsIgnoreCase(r.getSource()))
-                    {
-                        tempdestination=r.getDestination();
+                    tempdestination=r.getDestination();
 
                         for(Route r1:routeInfo)
                         {
@@ -104,7 +104,7 @@ public class ArrayListRoute
                         }           
                     }
                 }
-            }       
+                  
         }
         else
         {
