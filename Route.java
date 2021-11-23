@@ -54,4 +54,12 @@ public class Route
     {
         this.time=time;
     }
+    public String getCost()
+    {
+        return cost;
+    }
+    public void setCost(String cost)
+    {
+        this.cost=cost;
+    }
 }
