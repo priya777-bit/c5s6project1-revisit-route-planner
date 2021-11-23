@@ -20,4 +20,14 @@ public class Route
         this.time=time;
         this.cost=cost;
     }
+
+    //getters and setters
+    public String getSource()
+    {
+        return source;
+    }
+    public void setSource(String source)
+    {
+        this.source=source;
+    }
 }
