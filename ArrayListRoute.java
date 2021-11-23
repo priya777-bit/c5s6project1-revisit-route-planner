@@ -59,6 +59,7 @@ public class ArrayListRoute
         {
             directFlight=routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
             directFlight.forEach(display);
+            System.out.println();
             sortDirectFlights(directFlight);
         }
         else
