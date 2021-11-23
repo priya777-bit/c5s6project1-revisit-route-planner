@@ -39,5 +39,9 @@ public class ArrayListRoute
        Consumer<Route> disp = routeInfo.stream().forEach(d->System.out.println(d)); 
     }
 
+    public void showDirectFlights(ArrayList<Route> routeInfo,String source)
+    {
+        
+    }
 
 }
