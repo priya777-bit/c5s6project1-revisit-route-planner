@@ -89,6 +89,7 @@ public class ArrayListRoute
             }
             else
             {
+                String tempdestination="";
                 
             }
         }
