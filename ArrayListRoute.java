@@ -52,7 +52,7 @@ public class ArrayListRoute
         }
         else
         {
-            System.out.println(directFlightInfo.empty();
+            System.out.println("No Flights....");
         }
     }
 
