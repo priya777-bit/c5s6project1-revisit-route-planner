@@ -36,6 +36,10 @@ public class ArrayListRoute
         {
             System.out.println(ip.toString());
         }
+        catch(Exception e)
+        {
+            System.out.println(e.toString());
+        }
     }
 
     public void displayList()
