@@ -79,7 +79,7 @@ public class ArrayListRoute
 
         if(sourcedestination.isPresent())
         {
-            Optional<Route> sourcetempdestination = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(souce) && p.getDestination.equalsIgnoreCase(destination)))
+            sourcedestination = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(souce) && p.getDestination.equalsIgnoreCase(destination)))
         }
     }
 
