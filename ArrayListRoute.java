@@ -36,6 +36,7 @@ public class ArrayListRoute
 
     public void displayList()
     {
-        
+       Consumer<Route> disp = (d)->System.out.println(d);
+       disp.forEach() 
     }
 }
