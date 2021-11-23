@@ -73,9 +73,9 @@ public class ArrayListRoute
         directFlight.stream().sorted(Comparator.comparing(Route::getDestination)).forEach(display);
     }
 
-    public void showAllFlights(List<Route>,String source,String destination)
+    public void showAllFlights(List<Route> routeInfo,String source,String destination)
     {
-        
+        Optional<Route> sourcedestination = routeInfo.stream.
     }
 
 }
