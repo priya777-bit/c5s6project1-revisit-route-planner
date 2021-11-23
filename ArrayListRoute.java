@@ -83,7 +83,7 @@ public class ArrayListRoute
             
             if(destination1.isPresent())
             {
-                .forEach(display);
+                destination1.forEach(display);
             }
         }
     }
