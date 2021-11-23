@@ -36,7 +36,7 @@ public class ArrayListRoute
 
     public void displayList()
     {
-       Consumer<Route> disp = (d)->System.out.println(d);
+       Consumer<Route> disp = routeList.stream().(d)->System.out.println(d);
        disp.forEach() 
     }
 }
