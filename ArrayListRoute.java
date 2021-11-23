@@ -44,7 +44,7 @@ public class ArrayListRoute
     public Optional<Route> showDirectFlights(ArrayList<Route> routeInfo,String source)
     {
         Optional<Route> directFlightInfo = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
-        directFlightInfo.forEach()
+        directFlightInfo.forEach(d->System.out.println(d));
     }
 
 }
