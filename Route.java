@@ -30,4 +30,8 @@ public class Route
     {
         this.source=source;
     }
+    public String getDestination()
+    {
+        return destination;
+    }
 }
