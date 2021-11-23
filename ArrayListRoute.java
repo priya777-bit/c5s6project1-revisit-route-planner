@@ -80,7 +80,7 @@ public class ArrayListRoute
 
         if(sourcedestination.isPresent())
         {
-            Optional<Route> destination1 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination)).findAny();
+            Optional<Route> destination1 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).findAny();
         
             if(destination1.isPresent())
             {
