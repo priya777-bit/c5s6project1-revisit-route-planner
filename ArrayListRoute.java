@@ -49,7 +49,7 @@ public class ArrayListRoute
 
         if(directFlightInfo.isPresent())
         {
-            System.out.println(directFlightInfo.get());
+            System.out.println(directFlightInfo.get().getSource());
         }
         else
         {
