@@ -14,7 +14,7 @@ public class App
         rl.showDirectFlights(sourceCity);
         System.out.println();
         //rl.sortDirectFlights();
-        //String destCity=sc.nextLine();
-        //rl.showAllFlights(sourceCity,destCity);
+        String destCity=sc.nextLine();
+        rl.showAllFlights(sourceCity,destCity);
     }
 }
