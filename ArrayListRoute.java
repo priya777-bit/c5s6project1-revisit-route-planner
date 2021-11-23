@@ -75,11 +75,11 @@ public class ArrayListRoute
 
     public void showAllFlights(List<Route> routeInfo,String source,String destination)
     {
-        Optional<Route> source1 = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).map(f->f.getSource).findAny();
+        Optional<Route> source1 = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).map(f->f.getSource()).findAny();
 
         if(sourcedestination.isPresent())
         {
-            Optional<Route> sourcetempdestination = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(souce);
+            Optional<Route> sourcetempdestination = routeInfo.stream().filter(p->(p.getDestination().equalsIgnoreCase(destination).map(f->f.getDestination()).findAny();
             
             if(sourcetempdestination.isPresent())
             {
