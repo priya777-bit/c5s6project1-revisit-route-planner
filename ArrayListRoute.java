@@ -56,7 +56,7 @@ public class ArrayListRoute
 
         if(directFlightInfo.isPresent())
         {
-            System.out.println(directFlightInfo.get().getSource());
+            System.out.println(directFlightInfo.get());
         }
         else
         {
