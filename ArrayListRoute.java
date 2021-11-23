@@ -45,6 +45,8 @@ public class ArrayListRoute
     {
         Optional<Route> directFlightInfo = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
         directFlightInfo.forEach(d->System.out.println(d));
+
+        return directFlightInfo;
     }
 
 }
