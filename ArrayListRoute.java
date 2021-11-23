@@ -14,7 +14,7 @@ public class ArrayListRoute
     Optional<String> directFlightInfo = Optional.empty();
     Optional<String> sortDirectFlightsInfo = Optional.empty();
 
-    public void readFromFile(String filename)
+    public void readFromFile(String filename) throws ParseException
     {
         try
         {
