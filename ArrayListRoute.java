@@ -85,6 +85,10 @@ public class ArrayListRoute
             {
                 destination1.forEach(display);
             }
+            else
+            {
+                
+            }
         }
     }
 
