@@ -11,7 +11,7 @@ import java.util.*;
 public class ArrayListRoute
 {
     List<Route> routeInfo = new ArrayList<Route>();
-    Optional<Route> directFlightInfo = new ArrayList<Route>();
+    Optional<> directFlightInfo = new ArrayList<Route>();
 
     public List<Route> readFromFile(String filename)
     {
