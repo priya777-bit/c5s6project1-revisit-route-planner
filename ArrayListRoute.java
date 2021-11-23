@@ -13,7 +13,9 @@ public class ArrayListRoute
         try
         {
             BufferedReader br = new BufferedReader(new FileReader(filename));
+            String sentence="";
 
+            while((sentence=br.readLine())!=null)
             routeList.add(new Route())
         }
     }
