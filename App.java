@@ -5,5 +5,6 @@ public class App
         ArrayListRoute rl = new ArrayListRoute();
         String filename="routes.csv";
         rl.readFromFile()
+        rl.displayList();
     }
 }
