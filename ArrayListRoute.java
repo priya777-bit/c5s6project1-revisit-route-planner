@@ -52,7 +52,7 @@ public class ArrayListRoute
 
     public void showDirectFlights(ArrayList<Route> routeInfo,String source)
     {
-        directFlightInfo = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).findAny().collect(Collectors.toList());
+        directFlightInfo = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).findAny();
 
         if(directFlightInfo.isPresent())
         {
