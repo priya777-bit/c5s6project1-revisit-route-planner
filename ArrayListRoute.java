@@ -90,10 +90,9 @@ public class ArrayListRoute
 
                 for(Route r:routeInfo)
                 {
-                    tempdestination=r.
                     if(source.equalsIgnoreCase(r.getSource()))
                     {
-                        tempdestination=r.getSource();
+                        tempdestination=r.getDestination();
 
                         for(Route r1:routeInfo)
                         {
