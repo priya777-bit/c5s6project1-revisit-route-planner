@@ -28,6 +28,10 @@ public class ArrayListRoute
                 routeInfo.add(rp);
             }
         }
+        catch(FileNotFoundException fp)
+        {
+            System.out.println(fp.toString());
+        }
         catch(IOException ip)
         {
             System.out.println(ip.toString());
