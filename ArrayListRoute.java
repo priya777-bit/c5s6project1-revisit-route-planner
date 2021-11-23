@@ -24,7 +24,8 @@ public class ArrayListRoute
             while((sentence=br.readLine())!=null)
             {
                 String split[]=sentence.split(",");
-                routeInfo.add(new Route(split[0],split[1],Integer.parseInt(split[2]),Integer.parseInt(split[3]),split[4]));
+                Route rp = new Route(split[0],split[1],Integer.parseInt(split[2]),Integer.parseInt(split[3]),split[4]);
+                routeInfo.add(rp);
             }
         }
         catch(Exception ip)
