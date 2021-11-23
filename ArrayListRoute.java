@@ -94,17 +94,16 @@ public class ArrayListRoute
                 {
                     tempdestination=r.getDestination();
 
-                        for(Route r1:routeInfo)
+                    for(Route r1:routeInfo)
+                    {
+                        if(tempdestination.equalsIgnoreCase(r1.getSource()) && destination.equalsIgnoreCase(r1.getDestination()))
                         {
-                            if(tempdestination.equalsIgnoreCase(r1.getSource()) && destination.equalsIgnoreCase(r1.getDestination()))
-                            {
-                                showAllFlights(source,tempdestination);
-                                showAllFlights(tempdestination,destination);
-                            }
-                        }           
-                    }
+                            showAllFlights(source,tempdestination);
+                            showAllFlights(tempdestination,destination);
+                        }
+                    }           
                 }
-                  
+            }        
         }
         else
         {
