@@ -14,6 +14,7 @@ public class ArrayListRoute
     List<Route> routeInfo = new ArrayList<Route>();
     Consumer<Route> display = (d)->System.out.println(d);
     Optional<String> directFlightInfo = Optional.empty();
+    List<Route> directFlight = new ArrayList<Route>();
     Optional<String> sortDirectFlightsInfo = Optional.empty();
 
     public List<Route> readFromFile(String filename)
@@ -57,7 +58,7 @@ public class ArrayListRoute
 
         if(directFlightInfo.isPresent())
         {
-            System.out.println(directFlightInfo.get());
+            
         }
         else
         {
