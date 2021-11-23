@@ -85,7 +85,7 @@ public class ArrayListRoute
             if(destination1.isPresent())
             {
                 showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination)).collect(Collectors.toList());
-                destination1.forEach(display);
+                showAll.forEach(display);
             }
             else
             {
