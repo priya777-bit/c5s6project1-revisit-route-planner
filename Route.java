@@ -3,7 +3,7 @@ public class Route
     private String source;
     private String destination;
     private int distance;
-    private int time;
+    private String time;
     private String cost;
 
     //constructor
@@ -12,7 +12,7 @@ public class Route
 
     }
     //parameterised constructor
-    public Route(String source,String destination,int distance,int time,String cost)
+    public Route(String source,String destination,int distance,String time,String cost)
     {
         this.source=source;
         this.destination=destination;
@@ -46,11 +46,11 @@ public class Route
     {
         this.distance=distance;
     }
-    public int getTime()
+    public String getTime()
     {
         return time;
     }
-    public void setTime(int time)
+    public void setTime(String time)
     {
         this.time=time;
     }
