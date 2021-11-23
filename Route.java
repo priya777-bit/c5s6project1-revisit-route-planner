@@ -6,5 +6,18 @@ public class Route
     private int time;
     private String cost;
 
-    
+    //constructor
+    public Route()
+    {
+
+    }
+    //parameterised constructor
+    public Route(String source,String destination,int distance,int time,String cost)
+    {
+        this.source=source;
+        this.destination=destination;
+        this.distance=distance;
+        this.time=time;
+        this.cost=cost;
+    }
 }
