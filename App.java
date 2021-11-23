@@ -9,8 +9,7 @@ public class App
         String filename="routes.csv";
         rl.readFromFile(filename);
         rl.displayList();
-        List<Route> flightlist = new ArrayList<Route>();
         String sourceCity=sc.nextLine();
-        flightlist=rl.showDirectFlights(flightlist,sourceCity);
+        rl.showDirectFlights(flightlist,sourceCity);
     }
 }
