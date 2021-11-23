@@ -50,8 +50,10 @@ public class ArrayListRoute
         {
             return directFlightInfo.get();
         }
-
-        return directFlightInfo;
+        else
+        {
+            return Optional.empty();
+        }
     }
 
 }
