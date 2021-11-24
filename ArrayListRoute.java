@@ -91,7 +91,7 @@ public class ArrayListRoute
 
                 if(source2.isPresent())
                 {
-                    showAll = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
+                    //routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source));
 
                     for(int i=0;i<showAll.size();i++)
                     {
