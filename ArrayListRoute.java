@@ -91,12 +91,12 @@ public class ArrayListRoute
 
                 if(source2.isPresent())
                 {
-                    routeInfo.stream().filter((p->p.getSource().equalsIgnoreCase(r.getSource))).forEach(display);
+                    routeInfo.stream().filter((p->p.getSource().equalsIgnoreCase(r.getSource()))).forEach(display);
                     tempdestination=r.getDestination();
 
                     for(Route r1:routeInfo)
                     {
-                        Optional<Route> source3 = routeInfo.stream().filter(p->(p.tempdestination.equalsIgnoreCase(r1.getSource()) && (p.destination.equalsIgnoreCase(r1.getDestination())))).findAny();
+                        Optional<Route> source3 = routeInfo.stream().filter(p->(p.tempdestination.equalsIgnoreCase(r1.getSource()) && (p.getDestination().equalsIgnoreCase(r1.getDestination())))).findAny();
                         if(source3.isPresent())
                         {
                             routeInfo.stream().filter(p->(p.tempdestination.equalsIgnoreCase(r1.getSource()) && (p.destination.equalsIgnoreCase(r1.getDestination())))).forEach(display);
