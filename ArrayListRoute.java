@@ -15,7 +15,6 @@ public class ArrayListRoute
     Consumer<Route> display = (d)->System.out.println(d);
     Optional<Route> directFlightInfo = Optional.empty();
     List<Route> directFlight = new ArrayList<Route>();
-    //List<Route> showAll = new ArrayList<Route>();
     String tempdestination="";
 
     public List<Route> readFromFile(String filename)
