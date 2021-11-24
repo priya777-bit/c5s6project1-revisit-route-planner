@@ -13,7 +13,6 @@ public class App
         System.out.println();
         rl.showDirectFlights(sourceCity);
         System.out.println();
-        //rl.sortDirectFlights();
         String destCity=sc.nextLine();
         rl.showAllFlights(sourceCity,destCity);
     }
