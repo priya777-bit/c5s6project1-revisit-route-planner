@@ -90,8 +90,7 @@ public class ArrayListRoute
 
         if(source2.isPresent())
         {
-                    showAll = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
-                    //showAll.forEach(display);
+            showAll = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
                     
                     for(int i=0;i<showAll.size();i++)
                     {
@@ -106,7 +105,7 @@ public class ArrayListRoute
                             showAllFlights(tempdestination,destination);
                         }
                     }           
-                }
+                }          
                 
             //}
                
