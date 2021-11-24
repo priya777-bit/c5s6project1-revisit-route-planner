@@ -79,11 +79,11 @@ public class ArrayListRoute
 
     public void showAllFlights(String source,String destination)
     {
-        Optional<Route> source1 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source)) && (p.getDestination().equalsIgnoreCase(destination))).findAny();
+        Optional<Route> source1 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).findAny();
 
         if(source1.isPresent())
         {
-            routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source)) && (p.getDestination().equalsIgnoreCase(destination))). forEach(display);
+            routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).forEach(display);
 
          } //for(Route r:routeInfo)
             //{
@@ -98,7 +98,7 @@ public class ArrayListRoute
                     {
                         tempdestination = showAll.get(i).getDestination();
 
-                        Optional<Route> source3 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination)) && (p.getDestination().equalsIgnoreCase(destination))).findAny();
+                        Optional<Route> source3 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination) &&(p.getDestination().equalsIgnoreCase(destination))).findAny();
                         if(source3.isPresent())
                         {
                             //List<Route> show = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination)) && (p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
