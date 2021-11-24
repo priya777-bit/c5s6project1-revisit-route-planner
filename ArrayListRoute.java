@@ -91,24 +91,22 @@ public class ArrayListRoute
         if(source2.isPresent())
         {
             showAll = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
-                    
-                    for(int i=0;i<showAll.size();i++)
-                    {
-                        tempdestination = showAll.get(i).getDestination();
 
-                        Optional<Route> source3 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination) &&p.getDestination().equalsIgnoreCase(destination))).findAny();
-                        if(source3.isPresent())
-                        {
-                            routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination)) && (p.getDestination().equalsIgnoreCase(destination))).forEach(display);
-                            //show.forEach(display);
-                            showAllFlights(source,tempdestination);
-                            showAllFlights(tempdestination,destination);
-                        }
-                    }           
-                }          
-                
-            //}
-               
-        
+            for(int i=0;i<showAll.size();i++)
+            {
+                tempdestination = showAll.get(i).getDestination();
+
+                Optional<Route> source3 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination) &&p.getDestination().equalsIgnoreCase(destination))).findAny();
+
+                if(source3.isPresent())
+                {
+                    routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination)) && (p.getDestination().equalsIgnoreCase(destination))).forEach(display);
+                    showAllFlights(source,tempdestination);
+                    showAllFlights(tempdestination,destination);
+                }                         
+                                               
+                    
+            }           
+        }          
     }
 }
