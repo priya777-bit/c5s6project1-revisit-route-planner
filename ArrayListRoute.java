@@ -88,7 +88,8 @@ public class ArrayListRoute
             for(Route r:routeInfo)
             {
                 Optional<Route> source2 = routeInfo.stream().filter((p->p.source.equalsIgnoreCase(r.getSource))).findAny();
-                if(source.equalsIgnoreCase(r.getSource()))
+
+                if(source2.isPresent())
                 {
                     tempdestination=r.getDestination();
 
