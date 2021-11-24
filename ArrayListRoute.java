@@ -87,7 +87,7 @@ public class ArrayListRoute
 
             for(Route r:routeInfo)
             {
-                Optional<Route> source2 = routeInfo.stream().filter((p->p.getSource().equalsIgnoreCase(source).findAny();
+                Optional<Route> source2 = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).findAny();
 
                 if(source2.isPresent())
                 {
