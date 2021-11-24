@@ -83,15 +83,14 @@ public class ArrayListRoute
 
         if(source1.isPresent())
         {
-           showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
-           showAll.forEach(display);
-          //for(Route r:routeInfo)
+           routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).forEach(display);
+         } //for(Route r:routeInfo)
             //{
-                //Optional<Route> source2 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).findAny();
+                Optional<Route> source2 = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).findAny();
 
-                //if(source2.isPresent())
-                //{
-                    //showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
+                if(source2.isPresent())
+                {
+                    showAll = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
                     //showAll.forEach(display);
                     
                     for(int i=0;i<showAll.size();i++)
@@ -102,13 +101,13 @@ public class ArrayListRoute
                         if(source3.isPresent())
                         {
                             routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination)) && (p.getDestination().equalsIgnoreCase(destination))).forEach(display);
-                            //show.forEach(display);
+                            show.forEach(display);
                             showAllFlights(source,tempdestination);
                             showAllFlights(tempdestination,destination);
                         }
                     }           
                 }
-         //}
+            //}
                
         
     }
