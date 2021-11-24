@@ -102,7 +102,7 @@ public class ArrayListRoute
                         if(source3.isPresent())
                         {
                             List<Route> show = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination)) && (p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
-
+                            show.forEach(display);
                             showAllFlights(source,tempdestination);
                             showAllFlights(tempdestination,destination);
                         }
