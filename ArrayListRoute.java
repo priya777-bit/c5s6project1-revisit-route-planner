@@ -96,8 +96,8 @@ public class ArrayListRoute
 
                     for(Route r1:routeInfo)
                     {
-                        Optional<Route> source3 = routeInfo.stream().filter((p->p))
-                        if((r1.getSource()).equalsIgnoreCase(tempdestination) && (r1.getDestination()).equalsIgnoreCase(destination))
+                        Optional<Route> source3 = routeInfo.stream().filter((p->p.tempdestination.equalsIgnoreCase(r1.getSource())) && (p.destination.equalsIgnoreCase(r1.getDestination()))).findAny();
+                        if(source3.isPresent())
                         {
                             showAllFlights(source,tempdestination);
                             showAllFlights(tempdestination,destination);
