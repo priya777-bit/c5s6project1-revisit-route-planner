@@ -93,9 +93,9 @@ public class ArrayListRoute
                     routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).forEach(display);
                     //showAll.forEach(display);
                     
-                    for(int i=0;i<showAll.size();i++)
+                    for(int i=0;i<routeInfo.size();i++)
                     {
-                        tempdestination = showAll.get(i).getDestination();
+                        tempdestination = routeInfo.get(i).getDestination();
 
                         Optional<Route> source3 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination) &&p.getDestination().equalsIgnoreCase(destination))).findAny();
                         if(source3.isPresent())
