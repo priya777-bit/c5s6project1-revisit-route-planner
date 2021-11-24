@@ -93,7 +93,7 @@ public class ArrayListRoute
 
                     for(Route r1:routeInfo)
                     {
-                        if((tempdestination.equalsIgnoreCase(r1.getDestination()) && (destination.equalsIgnoreCase(r1.getDestination()))
+                        if((tempdestination.equalsIgnoreCase(r1.getDestination()) && (destination.equalsIgnoreCase(r1.getDestination())))
                         {
                             showAllFlights(source,tempdestination);
                             showAllFlights(tempdestination,destination);
