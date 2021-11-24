@@ -79,7 +79,7 @@ public class ArrayListRoute
 
     public void showAllFlights(String source,String destination)
     {
-        Optional<Route> source1 = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).findAny();
+        Optional<Route> source1 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && (p.getDestination.equalsIgnoreCase(destination))).findAny();
 
         if(source1.isPresent())
         {
