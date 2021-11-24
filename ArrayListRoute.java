@@ -103,9 +103,7 @@ public class ArrayListRoute
                     routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(tempdestination)) && (p.getDestination().equalsIgnoreCase(destination))).forEach(display);
                     showAllFlights(source,tempdestination);
                     showAllFlights(tempdestination,destination);
-                }                         
-                                               
-                    
+                }                                 
             }           
         }          
     }
