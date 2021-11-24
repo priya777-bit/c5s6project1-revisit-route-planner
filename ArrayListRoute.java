@@ -29,7 +29,7 @@ public class ArrayListRoute
             while((sentence=br.readLine())!=null)
             {
                 split=sentence.split(",");
-                Route rp = new Route(split[0],split[1],Integer.parseInt(split[2].trim()),split[3],split[4]);
+                Route rp = new Route(split[0].trim(),split[1].trim(),Integer.parseInt(split[2].trim()),split[3].trim(),split[4].trim());
                 routeInfo.add(rp);
             }
         }
