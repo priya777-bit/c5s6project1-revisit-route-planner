@@ -83,31 +83,26 @@ public class ArrayListRoute
 
         if(source1.isPresent())
         {
-            Optional<Route> destination1 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).findAny();
-        
-            if(destination1.isPresent())
+            showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
+            showAll.forEach(display);
+
+            for(Route r:routeInfo)
             {
-                showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
-                showAll.forEach(display);
-
-                for(Route r:routeInfo)
+                if((r.getSource()).equalsIgnoreCase(source))
                 {
-                    if((r.getSource()).equalsIgnoreCase(source))
-                    {
-                        tempdestination=r.getDestination();
+                    tempdestination=r.getDestination();
 
-                        for(Route r1:routeInfo)
+                    for(Route r1:routeInfo)
+                    {
+                        if((r1.getSource()).equalsIgnoreCase(tempdestination) && (r1.getDestination()).equalsIgnoreCase(destination))
                         {
-                            if((r1.getSource()).equalsIgnoreCase(tempdestination) && (r1.getDestination()).equalsIgnoreCase(destination))
-                            {
-                                showAllFlights(source,tempdestination);
-                                showAllFlights(tempdestination,destination);
-                            }
-                        }           
-                    }
+                            showAllFlights(source,tempdestination);
+                            showAllFlights(tempdestination,destination);
+                        }
+                    }           
                 }
-            }       
-        }
+            }
+        }       
         else
         {
             System.out.println("No FLights From Source...");
