@@ -85,13 +85,13 @@ public class ArrayListRoute
         {
            showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
            showAll.forEach(display);
-         } //for(Route r:routeInfo)
+          //for(Route r:routeInfo)
             //{
-                Optional<Route> source2 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).findAny();
+                //Optional<Route> source2 = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).findAny();
 
-                if(source2.isPresent())
-                {
-                    showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
+                //if(source2.isPresent())
+                //{
+                    //showAll = routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).collect(Collectors.toList());
                     //showAll.forEach(display);
                     
                     for(int i=0;i<showAll.size();i++)
@@ -108,7 +108,7 @@ public class ArrayListRoute
                         }
                     }           
                 }
-            //}
+       }   //}
                
         
     }
