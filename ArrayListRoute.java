@@ -15,7 +15,7 @@ public class ArrayListRoute
     Consumer<Route> display = (d)->System.out.println(d);
     Optional<Route> directFlightInfo = Optional.empty();
     List<Route> directFlight = new ArrayList<Route>();
-    List<Route> showAll = new ArrayList<Route>();
+    //List<Route> showAll = new ArrayList<Route>();
     String tempdestination="";
 
     public List<Route> readFromFile(String filename)
@@ -90,7 +90,7 @@ public class ArrayListRoute
 
         if(source2.isPresent())
         {
-            showAll = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
+            List<Route> showAll = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).collect(Collectors.toList());
             showAll.forEach(display);
             for(int i=0;i<showAll.size();i++)
             {
