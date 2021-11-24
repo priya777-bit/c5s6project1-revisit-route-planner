@@ -84,6 +84,10 @@ public class ArrayListRoute
         if(source1.isPresent())
         {
            routeInfo.stream().filter(p->(p.getSource().equalsIgnoreCase(source) && p.getDestination().equalsIgnoreCase(destination))).forEach(display);
+        }
+        else
+        {
+            System.out.println("No Flights From Source...");
         } 
                 
         Optional<Route> source2 = routeInfo.stream().filter(p->p.getSource().equalsIgnoreCase(source)).findAny();
